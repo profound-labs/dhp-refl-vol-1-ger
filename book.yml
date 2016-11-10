@@ -1,0 +1,30 @@
+title: "Dhammapada-Reflexionen"
+author: "Ajahn Munindo"
+file_as: Munindo, Ajahn
+
+# TODO two new isbns for new edition
+print_isbn: "000-0-000000-00-0"
+ebook_isbn: "000-0-000000-00-0"
+
+date: 2016-11-10
+
+# The data in this file is shared between output formats.
+#
+# Add format-specific data in the following files, which will add to
+# and override the settings in this file:
+# epub_mobi.yml, epub.yml, mobi.yml, latex.yml
+
+# These are very minimal settings, for a more complete example see
+# example-book.yml and book.yml.combined
+
+# See also:
+# epub_mobi.yml, epub.yml, mobi.yml, latex.yml
+
+cover_image: "cover.jpg"
+cover_credit: Cover photo offered by The Person
+
+publisher: "The Publisher"
+publisher_logo: "publisher-logo.jpg"
+
+publisher_atag: "<a href='http://thepublisher.org/'>www.thepublisher.org</a>"
+book_atag: "<a href='http://thepublisher.org/thebookurl/'>www.thepublisher.org/thebookurl</a>"
