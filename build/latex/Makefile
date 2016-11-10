@@ -5,10 +5,16 @@ BIBTEX=bibtex
 
 LATEX_OPTS=-interaction=nonstopmode -halt-on-error
 
-all: document
+all: book
 
-document:
+book:
 	$(LATEX) $(LATEX_OPTS) $(FILE).tex;
+
+twice:
+	$(LATEX) $(LATEX_OPTS) $(FILE).tex && $(LATEX) $(LATEX_OPTS) $(FILE).tex;
+
+print-specs:
+	org-ruby print-specs.org --translate textile | pandoc --from=textile --to=odt -o print-specs.odt;
 
 view:
 	evince $(FILE).pdf &
@@ -21,16 +27,16 @@ cover-back:
 
 cover-spine:
 	$(LATEX) $(LATEX_OPTS) cover_spine.tex
-	+pdftk cover_spine.pdf cat 1-endR output cover_spine_R.pdf
+	+pdftk cover_spine.pdf cat 1-endeast output cover_spine_east.pdf
 
-cover:
+cover-page:
 	$(LATEX) $(LATEX_OPTS) cover.tex
 
-cover-all:
+cover:
 	make cover-front
 	make cover-back
 	make cover-spine
-	make cover
+	make cover-page
 
 clean:
 	+rm -fv $(FILE).{dvi,ps,pdf,aux,log,bbl,blg}

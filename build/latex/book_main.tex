@@ -1,0 +1,106 @@
+\documentclass{aruno-gist}
+
+\usepackage{mylayout}
+
+\webversionfalse
+
+%% Details of the book
+%% ===================
+
+\title{Dhammapada-Reflexionen}
+\subtitle{52 Verse aus dem Dhammapada mit Kommentaren von Ajahn Munindo}
+\author{Ajahn Munindo}
+\date{}
+% TODO confirm number of copies
+\editionInfo{\textit{Zweite Auflage}, X,XXX Kopien, gedruckt in Malaysia, 2018}
+% TODO isbn
+\ISBN{000-0-000000-00-0}
+
+% \hyphenation{prep-a-ra-tion belief attrac-tive under-stand-ing moment}
+
+\begin{document}
+
+\ifwebversion
+\webcover{%
+\includegraphics[width=\paperwidth]{./cover_front.pdf}
+}
+\else
+
+% Gray color page
+% Pantone 423M
+% CMYK 22, 14, 18, 45
+
+\thispagestyle{empty}
+\mbox{}
+\pagecolor{frontgray}
+\newpage
+\thispagestyle{empty}
+\pagecolor{white}
+\mbox{}
+\newpage
+
+\fi
+
+%% Frontmatter
+%% ===========
+
+\frontmatter*
+\pagestyle{empty}
+
+\midsloppy
+
+\input{../../manuscript/tex/frontverse.tex}
+
+\input{../../manuscript/tex/acknowledgement_katannyuta.tex}
+
+\input{../../manuscript/tex/titlepage.tex}
+
+\input{../../manuscript/tex/copyright.tex}
+
+\chapterstyle{frontmatter}
+
+\input{../../manuscript/tex/preface.tex}
+
+%\input{../../manuscript/tex/introduction.tex}
+
+%% Main matter
+%% ===========
+
+\mainmatter*
+
+\input{../../manuscript/tex/booktitle.tex}
+
+\setcounter{chapter}{0}
+\setcounter{page}{1}
+\pagestyle{normalpage}
+\chapterstyle{mainmatter}
+
+\setlength{\parskip}{0.6\baselineskip}
+\setlength{\parindent}{0pt}
+
+\input{../../manuscript/tex/versepages.tex}
+
+%\backmatter
+%
+%\bookmarksetup{startatroot}
+%
+%\chapterstyle{backmatter}
+%\newgeometry{vmargin=15mm, hmargin=10mm}
+%
+%\input{../../manuscript/tex/index-of-first-lines.tex}
+%
+%%% Gift of Dhamma
+%%% --------------
+%
+%\cleartorecto
+%\thispagestyle{plain}
+%\input{../../manuscript/tex/gift-of-dhamma.tex}
+%
+%%% Copyright details
+%%% -----------------
+%
+%\cleartoverso
+%\thispagestyle{plain}
+%\input{../../manuscript/tex/copyright-details.tex}
+
+\end{document}
