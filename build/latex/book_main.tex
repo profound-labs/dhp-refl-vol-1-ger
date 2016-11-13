@@ -61,8 +61,6 @@
 
 \input{../../manuscript/tex/preface.tex}
 
-%\input{../../manuscript/tex/introduction.tex}
-
 %% Main matter
 %% ===========
 
@@ -80,27 +78,29 @@
 
 \input{../../manuscript/tex/versepages.tex}
 
-%\backmatter
-%
-%\bookmarksetup{startatroot}
-%
-%\chapterstyle{backmatter}
-%\newgeometry{vmargin=15mm, hmargin=10mm}
-%
-%\input{../../manuscript/tex/index-of-first-lines.tex}
-%
-%%% Gift of Dhamma
-%%% --------------
-%
-%\cleartorecto
-%\thispagestyle{plain}
-%\input{../../manuscript/tex/gift-of-dhamma.tex}
-%
-%%% Copyright details
-%%% -----------------
-%
-%\cleartoverso
-%\thispagestyle{plain}
-%\input{../../manuscript/tex/copyright-details.tex}
+\backmatter
+
+\bookmarksetup{startatroot}
+
+\chapterstyle{backmatter}
+\newgeometry{vmargin=15mm, hmargin=10mm}
+
+% FIXME: remove page number before index page
+
+\input{../../manuscript/tex/index-of-first-lines.tex}
+
+%% Gift of Dhamma
+%% --------------
+
+\cleartorecto
+\thispagestyle{plain}
+\input{../../manuscript/tex/gift-of-dhamma.tex}
+
+%% Copyright details
+%% -----------------
+
+\cleartoverso
+\thispagestyle{plain}
+\input{../../manuscript/tex/copyright-details.tex}
 
 \end{document}

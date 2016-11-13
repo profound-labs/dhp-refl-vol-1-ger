@@ -3,6 +3,8 @@
 *.log
 *.toc
 auto/
+TAGS
+index
 publish/epub/
 publish/mobi/
 publish/pdf/
