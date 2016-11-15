@@ -13,9 +13,6 @@ book:
 twice:
 	$(LATEX) $(LATEX_OPTS) $(FILE).tex && $(LATEX) $(LATEX_OPTS) $(FILE).tex;
 
-print-specs:
-	org-ruby print-specs.org --translate textile | pandoc --from=textile --to=odt -o print-specs.odt;
-
 view:
 	evince $(FILE).pdf &
 
