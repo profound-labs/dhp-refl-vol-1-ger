@@ -11,16 +11,24 @@ section_names: [ "", "", "" ]
 
 toc:
   - { the_matter: frontmatter }
-  - { title: "Cover", src: 'cover.xhtml.erb', target: epub, layout: none, type: cover, linear: no }
-  - { title: "Title Page", src: 'titlepage.xhtml.erb', target: epub, type: title-page }
-  - { title: "Contents", src: 'toc.xhtml.erb', target: epub, type: toc }
-  - { title: "Preface", src: 'preface.md', type: preface }
-  - { title: "Title Page", src: 'titlepage.xhtml.erb', target: mobi, type: text }
-  - { title: "Contents", src: 'toc.xhtml.erb', target: mobi, type: toc }
+  - { title: "Einband", src: 'cover.xhtml.erb', target: epub, layout: none, type: cover, linear: no }
+  - { title: "Titelseite", src: 'titlepage.xhtml.erb', target: epub, type: title-page }
+  - { title: "Inhalt", src: 'toc.xhtml.erb', target: epub, type: toc }
+  - { title: "Vorwort", src: 'preface.md', type: preface }
+  - { title: "Titelseite", src: 'titlepage.xhtml.erb', target: mobi, type: text }
+  - { title: "Inhalt", src: 'toc.xhtml.erb', target: mobi, type: toc }
   - { the_matter: mainmatter, section_number: 1  }
   - versepages.md
   - { the_matter: backmatter  }
   - { title: "Copyright", src: 'copyright.md.erb', type: copyright-page }
+
+cover_image: "cover.jpg"
+
+publisher: "Aruno Publications"
+publisher_logo: "publisher-logo.jpg"
+
+publisher_atag: "<a href='http://ratanagiri.org.uk/' target='_blank'>www.ratanagiri.org.uk</a>"
+book_atag: "<a href='http://fsbooks.org/' target='_blank'>www.fsbooks.org</a>"
 
 subject: RELIGION / Buddhism / Theravada
 source: http://fsbooks.org

@@ -103,7 +103,7 @@ em, i {
 /* line 43, ../sass/_byronic.sass */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
-  font-family: "SourceSansPro", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Tahoma", "Palatino", "Caecilia", sans-serif;
+  font-family: "ExistenceLight", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", "Tahoma", "Palatino", "Caecilia", sans-serif;
   page-break-after: avoid;
 }
 
@@ -398,4 +398,83 @@ pre {
 /* line 276, ../sass/_byronic.sass */
 .noborder {
   border: none;
+}
+
+/* line 3, ../sass/_dhp-refl.sass */
+table.toc h1 {
+  text-align: left;
+}
+/* line 5, ../sass/_dhp-refl.sass */
+table.toc td.section {
+  width: 1em;
+}
+
+/* line 9, ../sass/_dhp-refl.sass */
+#content.title-page h1, #content.title-page h2, #content.title-page h3 {
+  text-align: center;
+}
+/* line 11, ../sass/_dhp-refl.sass */
+#content.title-page p {
+  text-align: center;
+}
+/* line 13, ../sass/_dhp-refl.sass */
+#content.title-page h1 {
+  font-size: 1.7em;
+}
+/* line 15, ../sass/_dhp-refl.sass */
+#content.title-page h2 {
+  font-size: 1.3em;
+  padding-top: 0.5em;
+}
+/* line 18, ../sass/_dhp-refl.sass */
+#content.title-page h3 {
+  font-family: "ExistenceLight";
+  font-size: 1.3em;
+  padding-top: 2.5em;
+}
+
+/* line 24, ../sass/_dhp-refl.sass */
+#content.copyright-page h1, #content.copyright-page h2, #content.copyright-page h3 {
+  text-align: left;
+}
+/* line 26, ../sass/_dhp-refl.sass */
+#content.copyright-page p {
+  text-align: left;
+}
+
+/* line 29, ../sass/_dhp-refl.sass */
+h1.book-title {
+  padding-top: 3em;
+  font-size: 1.7em;
+  page-break-before: always;
+  page-break-after: always;
+}
+
+/* line 35, ../sass/_dhp-refl.sass */
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+/* line 39, ../sass/_dhp-refl.sass */
+blockquote.dhp-verse {
+  border-left: 1px solid #999999;
+  padding: 0.3em 0 0.3em 1em;
+  font-style: italic;
+  text-align: left;
+  page-break-before: always;
+}
+/* line 49, ../sass/_dhp-refl.sass */
+blockquote.dhp-verse p {
+  font-size: 0.9em;
+  text-align: left;
+}
+
+/* line 56, ../sass/_dhp-refl.sass */
+ul.verseindex {
+  list-style-type: disc;
+}
+/* line 58, ../sass/_dhp-refl.sass */
+ul.verseindex li {
+  font-size: 0.8em;
 }

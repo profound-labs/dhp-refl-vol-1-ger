@@ -7,6 +7,7 @@ cat "$SRC" |\
 sed -e 's/\\label[{][^}]\+[}]//g; s/\\pageref[{][^}]\+[}]/FIXME:pageref/g' |\
 sed 's/\\verseref[{]\([^}]\+\)[}]/\1.\\\\/g' |\
 sed 's/\\thai[{]\([^}]\+\)[}]/\\emph{\1}/g' |\
+sed 's/\\mbox[{]\([^}]\+\)[}]/\1/g' |\
 sed 's/\\speaker[{]\([^}]\+\)[}]/\\emph{\1}/g' |\
 sed 's/\\LaTeX/LaTeX/g' |\
 sed 's/\(\w\)"-\(\w\)/\1-\2/g' |\
