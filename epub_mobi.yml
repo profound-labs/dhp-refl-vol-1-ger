@@ -22,6 +22,8 @@ toc:
   - { the_matter: backmatter  }
   - { title: "Copyright", src: 'copyright.md.erb', type: copyright-page }
 
+lang: pt
+
 cover_image: "cover.jpg"
 
 publisher: "Aruno Publications"
