@@ -6,6 +6,8 @@ version: 'v1.0'
 
 bookid: "DhammapadaReflexionenVolOneGER"
 
+lang: de
+
 # Level 1, 2, 3
 section_names: [ "", "", "" ]
 
@@ -21,8 +23,6 @@ toc:
   - versepages.md
   - { the_matter: backmatter  }
   - { title: "Copyright", src: 'copyright.md.erb', type: copyright-page }
-
-lang: pt
 
 cover_image: "cover.jpg"
 
